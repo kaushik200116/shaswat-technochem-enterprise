@@ -1,391 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>SHASWAT TECHNOCHEM ENTERPRISE</title>
 
-<meta name="description" content="Advanced Polyurethane & Specialty Chemical Solutions">
+<meta name="description" content="Advanced Polyurethane, Waterproofing & Specialty Chemical Technologies">
+
+<link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Poppins',sans-serif;
-background:#f4f7fb;
-color:#1f2937;
-line-height:1.8;
-}
-
-.container{
-width:90%;
-max-width:1400px;
-margin:auto;
-}
-
-/* NAVBAR */
-
-nav{
-background:#041a34;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.2);
-}
-
-.nav-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 0;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-color:#fff;
-font-size:22px;
-font-weight:700;
-letter-spacing:1px;
-}
-
-.logo-img{
-height:52px;
-width:auto;
-object-fit:contain;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-flex-wrap:wrap;
-}
-
-nav ul li{
-margin-left:28px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:500;
-transition:0.3s;
-font-size:15px;
-}
-
-nav ul li a:hover{
-color:#38bdf8;
-}
-
-/* HERO */
-
-.hero{
-background:
-linear-gradient(rgba(3,18,38,0.82),rgba(3,18,38,0.85)),
-url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1600&auto=format&fit=crop');
-
-background-size:cover;
-background-position:center;
-color:white;
-padding:170px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:68px;
-font-weight:800;
-line-height:1.2;
-margin-bottom:25px;
-}
-
-.hero p{
-font-size:24px;
-max-width:1000px;
-margin:auto;
-margin-bottom:20px;
-}
-
-.hero-buttons{
-margin-top:40px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 34px;
-margin:10px;
-text-decoration:none;
-border-radius:50px;
-font-weight:600;
-transition:0.3s;
-}
-
-.btn-primary{
-background:#0ea5e9;
-color:white;
-}
-
-.btn-primary:hover{
-background:#0284c7;
-transform:translateY(-3px);
-}
-
-.btn-secondary{
-background:white;
-color:#041a34;
-}
-
-.btn-secondary:hover{
-background:#e5e7eb;
-transform:translateY(-3px);
-}
-
-/* SECTIONS */
-
-section{
-padding:90px 0;
-}
-
-.section-title{
-font-size:42px;
-font-weight:700;
-color:#041a34;
-margin-bottom:20px;
-position:relative;
-padding-left:18px;
-}
-
-.section-title::before{
-content:'';
-position:absolute;
-left:0;
-top:0;
-height:100%;
-width:6px;
-background:#0ea5e9;
-border-radius:10px;
-}
-
-.section-subtitle{
-font-size:18px;
-color:#4b5563;
-margin-bottom:40px;
-max-width:1100px;
-}
-
-.about-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-gap:35px;
-margin-top:50px;
-}
-
-.info-card{
-background:white;
-padding:35px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.info-card:hover{
-transform:translateY(-6px);
-}
-
-.info-card h3{
-font-size:28px;
-margin-bottom:20px;
-color:#041a34;
-}
-
-.product-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-margin-top:50px;
-}
-
-.product-card{
-background:white;
-padding:35px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-border-top:5px solid #0ea5e9;
-}
-
-.product-card:hover{
-transform:translateY(-6px);
-}
-
-.product-card h3{
-font-size:25px;
-margin-bottom:18px;
-color:#041a34;
-}
-
-.product-card ul{
-padding-left:20px;
-margin-top:15px;
-}
-
-.features-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.feature-box{
-background:white;
-padding:30px;
-text-align:center;
-border-radius:15px;
-box-shadow:0 8px 18px rgba(0,0,0,0.07);
-font-weight:600;
-font-size:18px;
-}
-
-.industry-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.industry-card{
-background:#041a34;
-color:white;
-padding:28px;
-border-radius:15px;
-text-align:center;
-font-size:18px;
-font-weight:600;
-}
-
-.contact-section{
-background:#041a34;
-color:white;
-border-radius:25px;
-padding:60px;
-margin-top:60px;
-}
-
-.contact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:40px;
-}
-
-.contact-box h3{
-font-size:28px;
-margin-bottom:25px;
-}
-
-.contact-box p,
-.contact-box li{
-font-size:17px;
-margin-bottom:12px;
-}
-
-.contact-box ul{
-padding-left:20px;
-}
-
-footer{
-background:#020d1d;
-color:white;
-text-align:center;
-padding:45px 20px;
-margin-top:80px;
-}
-
-footer h3{
-font-size:28px;
-margin-bottom:15px;
-}
-
-footer p{
-font-size:16px;
-color:#cbd5e1;
-}
-
-.whatsapp-float{
-position:fixed;
-width:65px;
-height:65px;
-bottom:25px;
-right:25px;
-background:#25d366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-box-shadow:0 6px 15px rgba(0,0,0,0.3);
-z-index:1000;
-transition:0.3s;
-}
-
-.whatsapp-float:hover{
-transform:scale(1.1);
-}
-
-.whatsapp-float img{
-width:38px;
-height:38px;
-}
-  
-@media(max-width:768px){
-
-.hero{
-padding:120px 20px;
-}
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.section-title{
-font-size:32px;
-}
-
-.nav-container{
-flex-direction:column;
-}
-
-nav ul{
-justify-content:center;
-margin-top:15px;
-}
-
-nav ul li{
-margin:8px 12px;
-}
-
-.contact-section{
-padding:40px 25px;
-}
-
-}
-
-</style>
 
 </head>
 
@@ -407,12 +39,17 @@ padding:40px 25px;
 
 <ul>
 
-<li><a href="#about">About</a></li>
-<li><a href="#divisions">Divisions</a></li>
-<li><a href="#products">Products</a></li>
-<li><a href="#capabilities">Capabilities</a></li>
-<li><a href="#industries">Industries</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="technologies.html">Technologies</a></li>
+
+<li><a href="industries.html">Industries</a></li>
+
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -420,99 +57,73 @@ padding:40px 25px;
 
 </nav>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 
 <section class="hero">
 
 <div class="container">
 
 <h1>
-SHASWAT TECHNOCHEM ENTERPRISE
+
+Advanced Polyurethane, Waterproofing & Sustainable Specialty Chemical Technologies
+
 </h1>
 
 <p>
-Advanced Polyurethane Systems, Protective Coatings & Specialty Chemical Technologies
+
+Engineering environmentally responsible polyurethane systems, low VOC coating technologies, waterproofing systems, polyester polyols, and sustainable specialty chemical solutions for industrial and infrastructure applications.
+
 </p>
 
 <p>
-Delivering high-performance polyurethane coating systems, waterproofing technologies, polyester polyols, and customized industrial PU solutions engineered for durability, industrial reliability, and application-oriented performance.
+
+Focused on bio-based approaches, green chemistry principles, industrial performance, and globally competitive “Made in India” technologies engineered for modern industrial requirements.
+
 </p>
 
 <div class="hero-buttons">
 
-<a href="#contact" class="btn btn-primary">
-Request Technical Consultation
-</a>
-
-<a href="#products" class="btn btn-secondary">
+<a href="products.html" class="btn">
 Explore Products
 </a>
 
+<a href="contact.html" class="btn">
+Contact Us
+</a>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- COMPANY OVERVIEW -->
 
-<section id="about">
+<section>
 
 <div class="container">
 
 <h2 class="section-title">
-About Us
+About SHASWAT TECHNOCHEM ENTERPRISE
 </h2>
 
-<p class="section-subtitle">
-
-Shaswat Technochem Enterprise is an emerging specialty chemical company focused on advanced polyurethane systems, protective coating technologies, and polyol-based industrial solutions.
-
-The company combines technical formulation expertise, industrial performance understanding, and application-oriented development to deliver reliable and commercially competitive polyurethane technologies for infrastructure, construction, engineering, and industrial sectors.
-
-</p>
-
-<div class="about-grid">
-
-<div class="info-card">
-
-<h3>Our Mission</h3>
-
 <p>
-To develop advanced polyurethane and specialty chemical solutions that combine industrial performance, durability, technical reliability, and sustainable technology.
+
+Shaswat Technochem Enterprise is an emerging specialty chemical company focused on advanced polyurethane systems, industrial waterproofing technologies, protective coating systems, polyester polyols, and customized polyurethane solutions.
+
+The company operates with a strong focus on sustainable chemistry, environmentally responsible technologies, low VOC systems, bio-based polyurethane approaches, and application-oriented industrial performance.
+
+With a long-term vision aligned toward “Made in India, Made for the World”, the company is committed toward delivering technically reliable, globally competitive, and environmentally conscious polyurethane technologies for infrastructure, engineering, construction, and industrial sectors.
+
 </p>
-
-</div>
-
-<div class="info-card">
-
-<h3>Technical Expertise</h3>
-
-<p>
-Specialized understanding of polyurethane chemistry, polyester polyols, waterproofing technologies, coating systems, industrial formulation science, and PU application optimization.
-</p>
-
-</div>
-
-<div class="info-card">
-
-<h3>Industrial Focus</h3>
-
-<p>
-Focused on industrial manufacturing, infrastructure, construction chemicals, PU foam systems, waterproofing technologies, engineering industries, and industrial coating applications.
-</p>
-
-</div>
-
-</div>
 
 </div>
 
 </section>
 
-<!-- DIVISIONS -->
+<!-- BUSINESS DIVISIONS -->
 
-<section id="divisions">
+<section>
 
 <div class="container">
 
@@ -520,294 +131,277 @@ Focused on industrial manufacturing, infrastructure, construction chemicals, PU 
 Business Divisions
 </h2>
 
-<div class="about-grid">
+<div class="card-grid">
 
-<div class="info-card">
-
-<h3>Shaswat BioShield</h3>
-
-<p>
-Advanced coating systems division focused on polyurethane waterproofing technologies, industrial protective coatings, metal protection systems, and sustainable polyurethane coating chemistry.
-</p>
-
-</div>
-
-<div class="info-card">
-
-<h3>ShasPol</h3>
-
-<p>
-Polyol systems division focused on polyester polyols, customized blended polyol systems, polyurethane intermediates, and application-oriented PU raw material technologies.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PRODUCTS -->
-
-<section id="products">
-
-<div class="container">
-
-<h2 class="section-title">
-Product Portfolio
-</h2>
-
-<div class="product-grid">
-
-<div class="product-card">
-
-<h3>2K PU M9 Metal Primer</h3>
-
-<p>
-Advanced two-component polyurethane metal primer engineered for industrial metal protection applications requiring strong adhesion, corrosion resistance, and long-term coating durability.
-</p>
-
-<ul>
-
-<li>Industrial Metal Structures</li>
-<li>Steel Surface Priming</li>
-<li>Machinery Protection</li>
-<li>Fabrication Industries</li>
-
-</ul>
-
-</div>
-
-<div class="product-card">
-
-<h3>2K PU Waterproofing Primer</h3>
-
-<p>
-High-performance polyurethane waterproofing primer developed for enhanced adhesion promotion, substrate penetration, and long-term waterproofing system performance.
-</p>
-
-<ul>
-
-<li>Terrace Waterproofing</li>
-<li>Roof Protection</li>
-<li>Concrete Waterproofing</li>
-<li>Industrial Flooring Preparation</li>
-
-</ul>
-
-</div>
-
-<div class="product-card">
-
-<h3>2K PU Waterproofing Top Coat</h3>
-
-<p>
-Durable polyurethane waterproofing top coat system designed for UV stability, weather durability, abrasion resistance, and protective waterproofing performance.
-</p>
-
-<ul>
-
-<li>Infrastructure Waterproofing</li>
-<li>Exterior Protection Systems</li>
-<li>Industrial Waterproof Coatings</li>
-<li>Terrace Protection</li>
-
-</ul>
-
-</div>
-
-<div class="product-card">
-
-<h3>SHASPOL 223</h3>
-
-<p>
-Aromatic polyester polyol system developed for rigid PU and PIR foam technologies requiring compressive strength and process consistency.
-</p>
-
-<ul>
-
-<li>Rigid PU Foam</li>
-<li>PIR Foam Systems</li>
-<li>Industrial Adhesives</li>
-<li>Sealants & Coatings</li>
-
-</ul>
-
-</div>
-
-<div class="product-card">
-
-<h3>SHASPOL 222</h3>
-
-<p>
-Pre-blended polyester polyol system engineered for insulation panels, rigid foam systems, and industrial thermal insulation technologies.
-</p>
-
-<ul>
-
-<li>PU Insulation Panels</li>
-<li>Rigid Foam Systems</li>
-<li>Structural Insulation</li>
-<li>Industrial Processing</li>
-
-</ul>
-
-</div>
-
-<div class="product-card">
-
-<h3>Upcoming PU Technologies</h3>
-
-<ul>
-
-<li>2K PU Flooring Systems</li>
-<li>2K PU Tile Adhesive</li>
-<li>2K PU Coving</li>
-<li>PU Crack Fillers</li>
-<li>Bathroom Waterproofing</li>
-<li>PU Wood Coatings</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CAPABILITIES -->
-
-<section id="capabilities">
-
-<div class="container">
-
-<h2 class="section-title">
-Technical Capabilities
-</h2>
-
-<div class="features-grid">
-
-<div class="feature-box">Customized Polyol Blending</div>
-<div class="feature-box">OH Value-Based Formulation Development</div>
-<div class="feature-box">Viscosity Optimization Support</div>
-<div class="feature-box">Industrial Coating Formulation</div>
-<div class="feature-box">Waterproofing Technology Development</div>
-<div class="feature-box">PU System Customization</div>
-<div class="feature-box">Application-Oriented Product Development</div>
-<div class="feature-box">Industrial Processing Support</div>
-<div class="feature-box">Technical Product Assistance</div>
-<div class="feature-box">Performance Optimization</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- INDUSTRIES -->
-
-<section id="industries">
-
-<div class="container">
-
-<h2 class="section-title">
-Industries Served
-</h2>
-
-<div class="industry-grid">
-
-<div class="industry-card">Infrastructure</div>
-<div class="industry-card">Construction</div>
-<div class="industry-card">Industrial Manufacturing</div>
-<div class="industry-card">Engineering Industries</div>
-<div class="industry-card">Metal Fabrication</div>
-<div class="industry-card">Warehousing</div>
-<div class="industry-card">PU Foam Systems</div>
-<div class="industry-card">Industrial Flooring</div>
-<div class="industry-card">Protective Coatings</div>
-<div class="industry-card">Waterproofing Systems</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<div class="container">
-
-<div class="contact-section">
-
-<div class="contact-grid">
-
-<div class="contact-box">
+<div class="card">
 
 <h3>
-Corporate Office & Manufacturing
+SHASWAT BIOSHIELD
 </h3>
 
 <p>
 
-Plot No. 2900/130,<br>
-Endochem Estate,<br>
-Near Rajpipla Chowkdi,<br>
-GIDC Ankleshwar,<br>
-Dist. Bharuch – 393001,<br>
-Gujarat, India
+Advanced coating & waterproofing systems division focused on industrial protective coatings, PU waterproofing systems, industrial flooring technologies, crack fillers, adhesives, sealants, decorative coatings, and environmentally responsible specialty coating systems.
 
 </p>
 
+<a href="bioshield.html" class="btn">
+Explore BioShield
+</a>
+
 </div>
 
-<div class="contact-box">
+<div class="card">
 
 <h3>
-Contact Details
+SHASPOL
 </h3>
 
 <p>
-<strong>Mobile:</strong> +91 9712111608
-</p>
 
-<p>
-<strong>WhatsApp:</strong> +91 9328324389
-</p>
-
-<p>
-<strong>Email:</strong><br>
-
-ksv@shaswattechnochem.com<br>
-
-shaswattechnochem@gmail.com
+Polyol systems division focused on polyester polyols, customized blended polyols, PU raw material technologies, industrial polyurethane intermediates, and sustainable polyurethane system development.
 
 </p>
+
+<a href="shaspol.html" class="btn">
+Explore ShasPol
+</a>
 
 </div>
 
-<div class="contact-box">
+</div>
+
+</div>
+
+</section>
+
+<!-- SUSTAINABILITY -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Sustainability & Green Technology Approach
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
 
 <h3>
-Business Divisions
+Low VOC Technologies
 </h3>
 
-<ul>
+<p>
 
-<li>Shaswat BioShield – Coating Systems</li>
-<li>ShasPol – Polyol Systems</li>
-<li>Customized PU Solutions</li>
-<li>Industrial PU Technologies</li>
+Focused on development of low VOC polyurethane systems and environmentally conscious coating technologies designed for safer industrial and infrastructure applications.
 
-</ul>
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Bio-Based PU Approach
+</h3>
+
+<p>
+
+Development-oriented approach toward bio-based polyurethane systems and sustainable raw material technologies supporting environmentally responsible industrial growth.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Environmentally Responsible Philosophy
+</h3>
+
+<p>
+
+Committed toward sustainable industrial development through advanced polyurethane technologies, responsible manufacturing practices, and performance-driven green chemistry solutions.
+
+</p>
 
 </div>
 
 </div>
+
+</div>
+
+</section>
+
+<!-- TECHNOLOGY HIGHLIGHTS -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Technology Highlights
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+
+<h3>
+Advanced PU Systems
+</h3>
+
+<p>
+
+High-performance two-component polyurethane technologies designed for industrial durability, adhesion performance, and long-term protection.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Waterproofing Technologies
+</h3>
+
+<p>
+
+Industrial-grade waterproofing systems developed for terraces, roofs, wet areas, flooring systems, and infrastructure protection applications.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Customized Polyol Systems
+</h3>
+
+<p>
+
+Application-oriented polyester polyol systems and customized blended PU technologies for industrial processing and formulation support.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose Us
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+
+<h3>
+Industrial Reliability
+</h3>
+
+<p>
+
+Products engineered for practical industrial operating conditions, long-term performance, and application reliability.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Customized Solutions
+</h3>
+
+<p>
+
+Application-oriented polyurethane technologies and customized systems developed according to customer requirements.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Technical Understanding
+</h3>
+
+<p>
+
+Strong expertise in polyurethane chemistry, industrial coatings, waterproofing technologies, and sustainable PU formulation systems.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MADE IN INDIA -->
+
+<section>
+
+<div class="container">
+
+<div class="card">
+
+<h2 class="section-title">
+Made in India • Engineered for Global Applications
+</h2>
+
+<p>
+
+Shaswat Technochem Enterprise believes in developing advanced polyurethane and specialty chemical technologies in India with a long-term vision toward serving global industrial markets through quality, innovation, sustainability, technical reliability, and environmentally responsible chemistry approaches.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT CTA -->
+
+<section>
+
+<div class="container">
+
+<div class="card">
+
+<h2 class="section-title">
+Technical Consultation & Product Inquiry
+</h2>
+
+<p>
+
+Connect with SHASWAT TECHNOCHEM ENTERPRISE for industrial polyurethane systems, waterproofing technologies, sustainable coating systems, polyester polyols, and customized technical solutions.
+
+</p>
+
+<br>
+
+<a href="contact.html" class="btn">
+Contact Our Team
+</a>
 
 </div>
 
@@ -824,7 +418,13 @@ SHASWAT TECHNOCHEM ENTERPRISE
 </h3>
 
 <p>
-Advanced Polyurethane Systems | Protective Coatings | Polyol Technologies | Specialty Chemical Solutions
+Advanced Polyurethane Systems | Waterproofing Technologies | Sustainable Specialty Chemical Solutions
+</p>
+
+<br>
+
+<p>
+Low VOC | Bio-Based Approach | Environmentally Responsible Technologies
 </p>
 
 <br>
@@ -833,18 +433,16 @@ Advanced Polyurethane Systems | Protective Coatings | Polyol Technologies | Spec
 Engineering Advanced Polyurethane Solutions for Industrial Performance
 </p>
 
-<br>
-
-<p>
-© 2026 SHASWAT TECHNOCHEM ENTERPRISE. All Rights Reserved.
-</p>
-
 </footer>
 
-  <a href="https://wa.me/919328324389" class="whatsapp-float" target="_blank">
+<!-- WHATSAPP FLOATING BUTTON -->
+
+<a href="https://wa.me/919328324389" class="whatsapp-float" target="_blank">
 
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 
 </a>
+
 </body>
+
 </html>
